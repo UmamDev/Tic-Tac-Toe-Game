@@ -105,7 +105,7 @@ function share(){
     navigator.share({
         title: 'Tic Tac Toe',
         text: 'Lets Play Online Tic Tac Toe\n',
-        url: 'https://whatsapp.com/channel/0029VaOh1g34Y9lmtElxuV1S',
+        url: 'https://umamdev.github.io/Tic-Tac-Toe-Game',
       })
       .then(() => console.log('Successful share'))
       .catch((error) => console.log('Error sharing', error));
