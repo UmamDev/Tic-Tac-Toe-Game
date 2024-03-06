@@ -19,6 +19,11 @@
     
     <h1 class="title">Tic Tac Toe</h1>
     
+    <!-- notif -->
+    <div class="notif">
+      <h4 class="firstPlayer" id="firstPlayer">player "o" first</h4>
+    </div>    
+    
     <!-- game container -->
     <div class="game-container">
       <ul id="items">
@@ -34,10 +39,25 @@
       </ul>
     </div>
     
-    <!-- win notif -->
-    <div class="notif">
-      <h4>player "o" jalan dulu</h4>
+    <div class="score">
+      <h4>score :</h4>
+      <ul>
+        <li>
+          <span class="material-symbols-outlined circle">
+            circle
+          </span>          
+          <h4 id="oScore">0</h4>
+        </li>
+        <li>
+          <span class="material-symbols-outlined close">
+            close
+          </span>
+          <h4 id="xScore">0</h4>
+        </li>        
+      </ul>
+      <button onclick="resetScore()"><h4>reset</h4></button>
     </div>
+    
     
     <!-- controls -->
     <div class="controls">

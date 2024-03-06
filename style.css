@@ -14,6 +14,11 @@ a{
   color: #fff;
 }
 
+.firstPlayer{
+  display: flex;
+  align-items: center;
+}
+
 .container{
   width: 100lvw;
   min-height: 100lvh;
@@ -59,22 +64,28 @@ a{
   align-items: center;
   text-align: center;
   box-shadow: 0 0 10px #00000078;
+  transition: 0.3s ease-in-out;
 }
 
-.x{
+.game-container ul li:hover{
+  background-color: #FFFFFFC9;
+  box-shadow: 0 0 1px #00000078;
+}
+
+.x span{
   color: #FF0000;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .x p, .o p{
   height: 100%;
 }
 
-.o{
+.o span{
   color: #00FF63;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .notif{
@@ -98,7 +109,62 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
+
+.controls div, .controls a:hover{
+  background-color: #B2B2B21C;
+}
+
+/* score */
+.score{
+  width: 330px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #86D6FF4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.score ul{
+  width: 200px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.score ul li{
+  display: flex;
+  gap: 2px;
+  align-items: end;
+}
+
+.score button{
+  background-color: #FFFFFFD4;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.score button:hover{
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px #00000078;
+}
+
+.circle{
+  color: #00FF63;
+  font-weight: bold;
+}
+
+.close{
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* foter */
 
 .footer{
   width: 100lvw;
